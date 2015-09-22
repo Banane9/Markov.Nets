@@ -10,9 +10,13 @@ namespace MarkovNets
     /// <typeparam name="TItem">The type of the items.</typeparam>
     public class MarkovGenerator<TItem>
     {
-        private readonly Dictionary<ItemChain<TItem>, Dictionary<float, TItem>> itemPossibilities = new Dictionary<ItemChain<TItem>, Dictionary<float, TItem>>();
+        private readonly Dictionary<ItemChain<TItem>, ProbabilityList<TItem>> itemPossibilities = new Dictionary<ItemChain<TItem>, ProbabilityList<TItem>>();
+
+        private readonly Random random;
 
         public MarkovGenerator()
-        { }
+        {
+            random.Next(,)
+        }
     }
 }
